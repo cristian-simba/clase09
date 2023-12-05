@@ -125,11 +125,14 @@ const port = 3000
 // })
 
 app.get('/', (req, res) => {
-    res.send(`Lading page`)
+    res.send(`Lading Page`)
   })
 
 app.get('/dashboard', (req, res) => {
-    res.send(`Bienvvenido`)
+    res.send(`Bienvenido`)
+  })
+app.get('/about', (req, res) => {
+    res.send(`Sobre Nosotros`)
   })
 
 app.listen(port, () => {
